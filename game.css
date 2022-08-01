@@ -1,0 +1,119 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+   * Set up the game board in a 4x4 grid using table-row and cell CSS
+   * Game board is 48x60em with each cell (property) being 12x12em
+   * The right column is player info panels
+   */
+.game_board {
+  width: 60em;
+  height: 48em;
+  background-color: rgb(255, 255, 255);
+}
+
+.row {
+  background-color: lightgreen;
+  width: 60em;
+  height: 12em;
+  display: table-row;
+}
+
+.cell {
+  outline: 0.25em solid white;
+  background-color: rgb(221, 163, 141);
+  display: table-cell;
+  width: 12em;
+  height: 12em;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.square-name {
+  font-weight: bold;
+}
+
+.middle,
+.info {
+  background-color: white;
+}
+
+/*Tokens*/
+.Triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid darkblue;
+}
+.Triangle2 {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid rgb(225, 22, 158);
+}
+
+.Circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgb(241, 241, 9);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.Circle2 {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgb(9, 205, 88);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+#player1-info_token {
+  display: inline-block;
+  margin: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid darkblue;
+}
+
+#player2-info_token {
+  display: inline-block;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  background: rgb(241, 241, 9);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+#player3-info_token {
+  display: inline-block;
+  margin: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid rgb(225, 22, 158);
+}
+#player4-info_token {
+  display: inline-block;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  background: rgb(9, 205, 88);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
